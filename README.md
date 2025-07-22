@@ -109,3 +109,86 @@ carpeta-destino/
 ## Licencia
 
 Este proyecto está licenciado bajo la licencia **MIT**. Consulta el archivo [LICENSE](./LICENSE) para más detalles.
+
+
+
+
+
+
+La API está desplegada en Vercel:
+
+- **Usuarios**:  
+  `https://proyecto-final-back-node-2025.vercel.app`
+
+
+  # Obtener todos los usuarios: 
+  GET: https://proyecto-final-back-node-2025.vercel.app/api/users
+
+
+  # Obtener usuario por Id: 
+
+  GET: https://proyecto-final-back-node-2025.vercel.app/api/users/id
+  ejemplo: https://proyecto-final-back-node-2025.vercel.app/api/users/5wn9L8BWUHNQXlOMUsRg
+
+
+  # Loguer con un usuario: 
+
+  POST: https://proyecto-final-back-node-2025.vercel.app/api/auth
+
+  Credenciales:
+  email: admin@admin.com
+  password: admin123
+
+  # Crear usuario: 
+
+  POST: https://proyecto-final-back-node-2025.vercel.app/api/users
+
+  Estructura: 
+  {
+  "nombre": "Ale",
+  "apellido": "Alo",
+  "email": "ale@admin.com",
+  "password": "admin123"
+}
+
+  # Eliminar usuario: 
+
+  DELETE: https://proyecto-final-back-node-2025.vercel.app/api/users/id
+
+
+
+- **Productos**:  
+  `https://proyecto-final-back-node-2025.vercel.app/api/products`
+
+  # Obtener todos los productos: 
+
+  GET: https://proyecto-final-back-node-2025.vercel.app/api/products
+
+
+  # Obtener producto por Id: 
+
+  GET: https://proyecto-final-back-node-2025.vercel.app/api/products/id
+
+  Ejempplo:
+  https://proyecto-final-back-node-2025.vercel.app/api/products/fcG1ODo82pFydL5mEcVK
+
+
+  # Crear un nuevo producto: 
+
+POST: https://proyecto-final-back-node-2025.vercel.app/api/products
+
+Estructura: {
+  "nombre": "Teclado Mecánico 2",
+  "descripcion": "Teclado mecánico con retroiluminación RGB",
+  "precio": 4500,
+  "cantidad": 10
+}
+
+  # Actualizar un producto: 
+
+PUT: https://proyecto-final-back-node-2025.vercel.app/api/products/id
+
+  # Eliminar un producto: 
+
+DELETE: https://proyecto-final-back-node-2025.vercel.app/api/products/id
+
