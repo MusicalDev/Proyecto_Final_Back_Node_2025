@@ -11,13 +11,16 @@ router.get('/', productController.getProducts);
 router.get('/:id', productController.getProductById);
 
 // Crear un nuevo producto
-router.post('/', authMiddleware,  productController.createProduct);
+//router.post('/', authMiddleware,  productController.createProduct);
+router.post('/',  productController.createProduct);
 
 // Actualizar un producto por ID
-router.put('/:id', authMiddleware, productController.updateProduct);
+// router.put('/:id', authMiddleware, productController.updateProduct);
+router.put('/:id', productController.updateProduct);
 
 // Eliminar un producto por ID
-router.delete('/:id', authMiddleware, productController.deleteProduct);
+// router.delete('/:id', authMiddleware, productController.deleteProduct);
+router.delete('/:id', productController.deleteProduct);
 
 export default router;
 
